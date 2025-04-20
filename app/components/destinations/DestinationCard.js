@@ -36,7 +36,7 @@ const DestinationCard = ({ destination, onOpenDetails, savedDestinations, onTogg
           <div className="flex justify-between items-end">
             <div>
               <span className="text-sm font-medium text-white bg-emerald-700 bg-opacity-80 px-2 py-1 rounded">
-                {destination.country}
+                {destination.district}
               </span>
             </div>
             <Rating score={destination.rating} />

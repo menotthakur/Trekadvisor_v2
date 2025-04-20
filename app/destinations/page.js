@@ -5,7 +5,7 @@ import Button from '../components/hero/Button';
 import Footer from '../components/ui/Footer';
 import DestinationCard from '../components/destinations/DestinationCard';
 import DestinationModal from '../components/destinations/DestinationModal';
-import { destinations } from '../components/destinations/data';
+import { destinations } from '../constants/destinationdata';
 import Navbar from '../components/ui/Navbar';
 
 export default function TravelDestinationsPage() {
