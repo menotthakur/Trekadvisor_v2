@@ -1,74 +1,69 @@
 "use client";
 
-import Image from 'next/image';
+import Image from "next/image";
+import { Star, MapPin, Clock } from "lucide-react";
+import { PACKAGES } from "@/app/constants/packages";
 
-const destinations = [
-  {
-    name: 'Rohtang Pass',
-    location: 'Manali',
-    rating: 4.8,
-    image: '/destinations/rohtang.jpg',
-    reviews: 128
-  },
-  {
-    name: 'McLeod Ganj',
-    location: 'Dharamshala',
-    rating: 4.6,
-    image: '/destinations/mcleod.jpg',
-    reviews: 96
-  },
-  {
-    name: 'Mall Road',
-    location: 'Shimla',
-    rating: 4.5,
-    image: '/destinations/mall-road.jpg',
-    reviews: 156
-  }
-];
-
-export default function FeaturedDestinations() {
+export default function PopularPackages() {
   return (
-    <div className="mt-12">
-      <h2 className="text-2xl font-semibold text-gray-800 mb-6">Featured Destinations</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {destinations.map((destination, index) => (
-          <div key={index} className="bg-white rounded-xl shadow-md overflow-hidden group hover:shadow-lg transition-shadow duration-300">
-            <div className="relative h-48 w-full">
-              <Image
-                src={destination.image}
-                alt={destination.name}
-                fill
-                className="object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="p-4">
-              <h3 className="text-lg font-semibold text-gray-800">{destination.name}</h3>
-              <p className="text-gray-600">{destination.location}</p>
-              <div className="flex items-center mt-2">
-                <div className="flex items-center">
-                  {[...Array(5)].map((_, i) => (
-                    <svg
-                      key={i}
-                      className={`w-4 h-4 ${
-                        i < Math.floor(destination.rating)
-                          ? 'text-yellow-400'
-                          : 'text-gray-300'
-                      }`}
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
+    <div className="py-10 px-4 bg-gray-50">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-8">
+          <h2 className="text-3xl font-bold text-gray-800">Our Most Popular Packages</h2>
+          <p className="text-gray-600 mt-2">Discover the tours chosen by thousands of travelers</p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {PACKAGES.map((pkg) => (
+            <div key={pkg.id} className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+              <div className="relative">
+                <div className="absolute top-3 left-3 bg-green-600 text-white text-xs font-semibold px-2 py-1 rounded-full z-10">
+                  {pkg.soldCount}+ sold
                 </div>
-                <span className="ml-2 text-sm text-gray-600">
-                  ({destination.reviews} reviews)
-                </span>
+                <Image
+                  src={pkg.image}
+                  alt={pkg.name}
+                  width={400}
+                  height={225}
+                  className="w-full h-52 object-cover"
+                />
+              </div>
+              
+              <div className="p-5">
+                <div className="flex items-center mb-2">
+                  <Star size={16} className="text-yellow-400 fill-yellow-400" />
+                  <span className="text-sm font-medium ml-1">{pkg.rating}</span>
+                  <span className="mx-2 text-gray-300">•</span>
+                  <span className="text-sm text-gray-500">Best Seller</span>
+                </div>
+                
+                <h3 className="font-bold text-lg text-gray-800 mb-1">{pkg.name}</h3>
+                
+                <div className="flex items-center text-sm text-gray-500 mb-3">
+                  <MapPin size={14} className="mr-1" />
+                  <span>{pkg.location}</span>
+                </div>
+                
+                <div className="flex items-center text-sm text-gray-500 mb-4">
+                  <Clock size={14} className="mr-1" />
+                  <span>{pkg.duration}</span>
+                </div>
+                
+                <div className="flex items-center justify-between">
+                  <div>
+                    <span className="text-lg font-bold text-green-600">{pkg.price}</span>
+                    <span className="text-sm text-gray-500">/person</span>
+                  </div>
+                  
+                  <button className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+                    Book Now
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
-} 
+}

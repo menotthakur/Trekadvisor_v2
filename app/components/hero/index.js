@@ -11,7 +11,7 @@ export default function HeroWithTripFocus() {
     <div className="relative overflow-hidden bg-slate-50 min-h-screen py-20 md:py-0">
       <Background />
       
-      <div className="container mx-auto max-w-7xl px-4 min-h-[calc(100vh-80px)] flex flex-col justify-between relative z-10 pt-24">
+      <div className="container mx-auto max-w-7xl px-4 min-h-[calc(100vh-80px)] flex flex-col justify-between relative z-10 md:pt-24">
         {/* Main content with trip planner prominence */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 w-full py-8">
           <div className="lg:col-span-5">
