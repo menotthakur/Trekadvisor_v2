@@ -1,16 +1,13 @@
 "use client";
 
-import { X, Globe, Heart, Calendar, Landmark, Map, Clock, Banknote, Languages, Bus, Home, Phone } from 'lucide-react';
+import { X, Globe, Landmark, Map, Clock, Phone } from 'lucide-react';
 import Button from '../ui/Button';
-import Rating from './Rating';
 import Tag from './Tag';
 import useOutsideClick from '../../ref/useOutsideClick';
 
 const DestinationModal = ({ 
   destination,
   onClose,
-  savedDestinations,
-  onToggleSave,
   travelTips
 }) => {
   const modalRef = useOutsideClick(onClose);
@@ -22,7 +19,6 @@ const DestinationModal = ({
     description,
     longDescription,
     image,
-    rating,
     category,
     address,
     hours,
@@ -58,12 +54,6 @@ const DestinationModal = ({
               {country}
             </p>
           </div>
-          
-          <div className="absolute top-4 left-4">
-            <div className="bg-white/90 rounded-full py-1 px-3 shadow-md">
-              <Rating score={rating} showScore={true} size="lg" />
-            </div>
-          </div>
         </div>
         
         <div className="p-6 sm:p-8">
@@ -71,18 +61,6 @@ const DestinationModal = ({
             <div className="flex flex-wrap gap-2 mb-4 sm:mb-0">
               <Tag text={category} />
             </div>
-            
-            <Button 
-              variant="primary"
-              className="flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white"
-              onClick={() => onToggleSave(destination.id)}  
-            >
-              <Heart 
-                size={20} 
-                className={savedDestinations.includes(destination.id) ? "fill-white" : ""} 
-              />
-              {savedDestinations.includes(destination.id) ? 'Saved to Favorites' : 'Add to Favorites'}
-            </Button>
           </div>
           
           <div className="prose max-w-none">

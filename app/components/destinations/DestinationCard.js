@@ -1,12 +1,11 @@
 "use client";
 
 import Image from 'next/image';
-import { Heart, ChevronRight } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 import Button from '../ui/Button';
-import Rating from './Rating';
 import Tag from './Tag';
 
-const DestinationCard = ({ destination, onOpenDetails, savedDestinations, onToggleSave }) => {
+const DestinationCard = ({ destination, onOpenDetails }) => {
   return (
     <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-gray-100">
       <div 
@@ -18,20 +17,6 @@ const DestinationCard = ({ destination, onOpenDetails, savedDestinations, onTogg
           alt={destination.name} 
           className="w-full h-full object-cover"
         />
-        <Button 
-          className="absolute top-3 right-3 p-2 bg-white bg-opacity-70 rounded-full hover:bg-opacity-100 transition-all"
-          onClick={(e) => {
-            e.stopPropagation();
-            onToggleSave(destination.id);
-          }}
-        >
-          <Heart 
-            size={18} 
-            className={savedDestinations.includes(destination.id) 
-              ? "text-red-500 fill-red-500" 
-              : "text-gray-600"} 
-          />
-        </Button>
         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-3">
           <div className="flex justify-between items-end">
             <div>
@@ -39,7 +24,6 @@ const DestinationCard = ({ destination, onOpenDetails, savedDestinations, onTogg
                 {destination.district}
               </span>
             </div>
-            <Rating score={destination.rating} />
           </div>
         </div>
       </div>

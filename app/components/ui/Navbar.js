@@ -26,6 +26,18 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Handle body scroll lock when mobile menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [isOpen]);
+
   const toggleDropdown = (index) => {
     if (activeDropdown === index) {
       setActiveDropdown(null);
@@ -47,8 +59,8 @@ const Navbar = () => {
       hasDropdown: false,
     },
     { 
-      name: 'Destinations', 
-      path: '/destinations', 
+      name: 'Hidden Gems', 
+      path: '/hidden-gems', 
       hasDropdown: false,
     },
   ];
@@ -124,17 +136,40 @@ const Navbar = () => {
           </nav>
         </div>
           
-        {/* Mobile Navigation with active underline */}
-        {isOpen && (
-          <div className="lg:hidden bg-white border-t mt-2 shadow-xl">
-            <div className="flex flex-col w-full px-4 py-3">
+        {/* Mobile Navigation with slide-in animation from right to left */}
+        <div 
+          className={`lg:hidden fixed top-0 right-0 h-full w-full bg-black/50 transition-opacity duration-300 z-40 ${
+            isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
+          }`}
+          onClick={() => setIsOpen(false)}
+        >
+          <div 
+            className={`absolute top-0 right-0 h-full w-4/5 max-w-sm bg-white shadow-xl transform transition-transform duration-300 ease-in-out z-50 ${
+              isOpen ? 'translate-x-0' : 'translate-x-full'
+            }`}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex justify-between items-center p-4 border-b">
+              <span className="text-xl font-bold">
+                <span className="text-teal-600">Travel</span>
+                <span className="text-teal-600">Ease</span>
+              </span>
+              <Button
+                onClick={() => setIsOpen(false)}
+                variant="text"
+                className="p-2 text-gray-700 hover:bg-gray-100 rounded-full"
+              >
+                <X size={24} />
+              </Button>
+            </div>
+            <div className="flex flex-col w-full py-3">
               {navLinks.map((link, index) => (
                 <div key={index}>
                   {link.hasDropdown ? (
                     <Button
                       onClick={() => toggleDropdown(index)}
                       variant="text"
-                      className="flex items-center justify-between w-full text-gray-800 hover:text-teal-600 font-medium py-3 border-b border-gray-100"
+                      className="flex items-center justify-between w-full text-gray-800 hover:text-teal-600 font-medium py-3 px-4 border-b border-gray-100"
                     >
                       <div className="flex items-center space-x-2">
                         <span>{link.name}</span>
@@ -147,7 +182,7 @@ const Navbar = () => {
                   ) : (
                     <Link
                       href={link.path}
-                      className={`flex items-center justify-between w-full font-medium py-3 border-b border-gray-100 relative
+                      className={`flex items-center justify-between w-full font-medium py-3 px-4 border-b border-gray-100 relative
                         ${pathname === link.path ? 'text-teal-600 after:absolute after:w-1 after:h-full after:bg-teal-500 after:left-0 after:top-0' : 'text-gray-800 hover:text-teal-600'}
                       `}
                       onClick={() => setIsOpen(false)}
@@ -161,7 +196,7 @@ const Navbar = () => {
               ))}
             </div>
           </div>
-        )}
+        </div>
       </header>
     </div>
   );
