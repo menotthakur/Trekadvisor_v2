@@ -18,7 +18,7 @@ const DestinationCard = ({ destination, onOpenDetails, savedDestinations, onTogg
           alt={destination.name} 
           className="w-full h-full object-cover"
         />
-        <button 
+        <Button 
           className="absolute top-3 right-3 p-2 bg-white bg-opacity-70 rounded-full hover:bg-opacity-100 transition-all"
           onClick={(e) => {
             e.stopPropagation();
@@ -31,7 +31,7 @@ const DestinationCard = ({ destination, onOpenDetails, savedDestinations, onTogg
               ? "text-red-500 fill-red-500" 
               : "text-gray-600"} 
           />
-        </button>
+        </Button>
         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-3">
           <div className="flex justify-between items-end">
             <div>

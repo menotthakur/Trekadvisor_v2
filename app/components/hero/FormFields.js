@@ -6,46 +6,35 @@ import Dropdown from "./Dropdown";
 import Button from "./Button";
 
 export default function FormFields() {
-  const [selectedDestination, setSelectedDestination] = useState("");
-  const [selectedDate, setSelectedDate] = useState("");
+  const [selectedDistrict, setSelectedDistrict] = useState("");
 
-  const destinations = [
-    "Select Destination",
+  const districts = [
+    "Select District",
     "Shimla",
-    "Manali",
-    "Dharamshala",
-    "Dalhousie",
-    "Kasol"
+    "Kullu",
+    "Kangra",
+    "Mandi",
+    "Chamba",
+    "Solan",
+    "Sirmaur",
+    "Bilaspur",
+    "Hamirpur",
+    "Una",
+    "Kinnaur",
+    "Lahaul and Spiti"
   ];
 
   return (
     <div className="space-y-4">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="flex flex-col items-start">
         <Dropdown
           icon="/images/hero/location.svg"
-          placeholder="Select Destination"
-          options={destinations}
-          value={selectedDestination}
-          onChange={setSelectedDestination}
-          className="bg-white z-[30]" 
+          placeholder="Select District"
+          options={districts}
+          value={selectedDistrict}
+          onChange={setSelectedDistrict}
+          className="bg-white z-[30] w-full items-start" 
         />
-
-        <div className="flex items-center gap-3 border border-gray-200 rounded-lg p-4 bg-white hover:border-green-500 hover:shadow-md transition-all">
-          <Image
-            src="/images/hero/calendar.svg"
-            alt="Calendar icon"
-            width={20}
-            height={20}
-            className="text-green-600"
-          />
-          <input
-            type="date"
-            className="w-full bg-transparent outline-none text-gray-700 text-base cursor-pointer"
-            placeholder="Select Date"
-            value={selectedDate}
-            onChange={(e) => setSelectedDate(e.target.value)}
-          />
-        </div>
       </div>
 
       <Button
@@ -53,7 +42,7 @@ export default function FormFields() {
         icon="/images/hero/search.svg"
         className="w-full"
       >
-        Find Packages
+        Find Destinations
       </Button>
     </div>
   );

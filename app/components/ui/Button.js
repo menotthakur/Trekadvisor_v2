@@ -1,7 +1,7 @@
 "use client";
 
 const Button = ({ children, className, variant = "default", onClick, ...props }) => {
-  const baseClasses = "flex items-center justify-center px-4 py-2 rounded-lg font-medium transition-all duration-200 ease-in-out";
+  const baseClasses = "flex items-center justify-center px-4 py-2 rounded-lg font-medium transition-all duration-200 ease-in-out cursor-pointer";
   
   const variantClasses = {
     default: "bg-emerald-600 text-white hover:bg-emerald-700",

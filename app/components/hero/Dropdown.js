@@ -30,7 +30,7 @@ export default function Dropdown({
     <div className={`relative ${className}`} ref={dropdownRef}>
       <Button
         variant="secondary"
-        className="flex items-center gap-3 border border-gray-200 rounded-lg p-4 bg-white hover:border-green-500 hover:shadow-md transition-all w-full"
+        className="flex items-start gap-3 border border-gray-200 rounded-lg p-4 bg-white hover:border-green-500 hover:shadow-md transition-all w-full"
         onClick={() => setIsOpen(!isOpen)}
       >
         {icon && (
