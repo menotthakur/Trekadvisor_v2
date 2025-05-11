@@ -1,13 +1,24 @@
 'use client';
 import { motion, useMotionValue, useTransform, animate } from 'framer-motion';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import Button from '../ui/Button';
 
 const SwipableCard = ({ images }) => {
-  const [currentCards, setCurrentCards] = useState(images.map((img, index) => ({
+  // Initialize cards with uniqueId for tracking
+  const initializeCards = () => images.map((img, index) => ({
     ...img,
-    uniqueId: index
-  })));
+    uniqueId: `${index}-${Date.now()}` // Add timestamp for truly unique IDs when resetting
+  }));
+
+  const [currentCards, setCurrentCards] = useState(initializeCards());
+
+  // Reset cards when they're all gone
+  useEffect(() => {
+    if (currentCards.length === 0) {
+      setCurrentCards(initializeCards());
+    }
+  }, [currentCards.length]);
 
   const handleCardRemove = (card, direction) => {
     // You can add any additional logic here when a card is removed
@@ -32,11 +43,11 @@ const SwipableCard = ({ images }) => {
         
         Promise.all([
           animate(x, targetX, {
-            duration: 0.15,
+            duration: 0.08,
             ease: "easeOut"
           }),
           animate(opacity, 0, {
-            duration: 0.15,
+            duration: 0.08,
             ease: "easeOut"
           })
         ]).then(() => {
@@ -45,11 +56,11 @@ const SwipableCard = ({ images }) => {
         });
       } else {
         animate(x, 0, { 
-          duration: 0.15,
+          duration: 0.08,
           ease: "easeOut"
         });
         animate(opacity, 1, {
-          duration: 0.15,
+          duration: 0.08,
           ease: "easeOut"
         });
       }
@@ -98,48 +109,52 @@ const SwipableCard = ({ images }) => {
         ))}
       </div>
       <motion.div
-        className="flex items-center gap-2 text-gray-500"
+        className="flex items-center gap-2"
         animate={{
           x: [0, 10, 0],
         }}
         transition={{
-          duration: 1.5,
+          duration: 0.8,
           repeat: Infinity,
           ease: "easeInOut"
         }}
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M8.25 4.5l7.5 7.5-7.5 7.5"
-          />
-        </svg>
-        <span className="text-sm">Swipe to explore</span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-6 h-6"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M15.75 19.5L8.25 12l7.5-7.5"
-          />
-        </svg>
+        <Button variant="text" className="!p-0">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M8.25 4.5l7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </Button>
+        <span className="text-sm text-gray-500">Swipe to explore</span>
+        <Button variant="text" className="!p-0">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M15.75 19.5L8.25 12l7.5-7.5"
+            />
+          </svg>
+        </Button>
       </motion.div>
     </div>
   );
 };
 
-export default SwipableCard; 
+export default SwipableCard;

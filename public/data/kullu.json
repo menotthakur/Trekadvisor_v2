@@ -1,0 +1,63 @@
+{
+  "name": "Kullu",
+  "description": "Known as the 'Valley of Gods', Kullu is a picturesque district in Himachal Pradesh famous for its scenic beauty, apple orchards, and adventure sports. The district is home to the famous Kullu Dussehra festival and offers numerous trekking trails and camping sites.",
+  "coverImage": "/images/districts/kullu-cover.jpg",
+  "summary": "A paradise for nature lovers and adventure enthusiasts",
+  "locations": [
+    {
+      "id": "kullu-manali",
+      "name": "Manali",
+      "description": "A popular hill station known for its snow-capped mountains, adventure sports, and vibrant culture.",
+      "image": "/images/locations/manali.jpg",
+      "category": "Hill Station",
+      "rating": 4.8,
+      "address": "Manali, Kullu District, Himachal Pradesh",
+      "hours": "Open 24/7",
+      "phone": "+91-1902-252175"
+    },
+    {
+      "id": "kullu-rohtang",
+      "name": "Rohtang Pass",
+      "description": "A high mountain pass offering breathtaking views and snow activities throughout the year.",
+      "image": "/images/locations/rohtang.jpg",
+      "category": "Mountain Pass",
+      "rating": 4.7,
+      "address": "Rohtang Pass, Kullu District, Himachal Pradesh",
+      "hours": "6:00 AM - 6:00 PM",
+      "phone": null
+    },
+    {
+      "id": "kullu-solang",
+      "name": "Solang Valley",
+      "description": "Adventure sports hub offering skiing, paragliding, and zorbing activities.",
+      "image": "/images/locations/solang.jpg",
+      "category": "Adventure",
+      "rating": 4.6,
+      "address": "Solang Valley, Kullu District, Himachal Pradesh",
+      "hours": "9:00 AM - 5:00 PM",
+      "phone": "+91-1902-252175"
+    },
+    {
+      "id": "kullu-hadimba",
+      "name": "Hadimba Temple",
+      "description": "Ancient wooden temple dedicated to Hadimba Devi, surrounded by cedar forests.",
+      "image": "/images/locations/hadimba.jpg",
+      "category": "Temple",
+      "rating": 4.5,
+      "address": "Hadimba Temple Road, Manali, Kullu District",
+      "hours": "8:00 AM - 6:00 PM",
+      "phone": null
+    },
+    {
+      "id": "kullu-naggar",
+      "name": "Naggar Castle",
+      "description": "Historic castle with stunning views of the Kullu Valley and art gallery.",
+      "image": "/images/locations/naggar.jpg",
+      "category": "Heritage",
+      "rating": 4.4,
+      "address": "Naggar, Kullu District, Himachal Pradesh",
+      "hours": "9:00 AM - 5:00 PM",
+      "phone": "+91-1902-248349"
+    }
+  ]
+} 

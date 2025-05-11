@@ -1,0 +1,63 @@
+{
+  "name": "Lahaul and Spiti",
+  "description": "Lahaul and Spiti is a district in Himachal Pradesh known for its stark landscapes, ancient monasteries, and unique culture. The district is famous for its high-altitude passes, Buddhist monasteries, and adventure tourism.",
+  "coverImage": "/images/districts/lahaul-spiti-cover.jpg",
+  "summary": "A land of ancient monasteries and breathtaking landscapes",
+  "locations": [
+    {
+      "id": "lahaul-spiti-keylong",
+      "name": "Keylong",
+      "description": "District headquarters known for its scenic beauty and cultural heritage.",
+      "image": "/images/locations/keylong.jpg",
+      "category": "Hill Station",
+      "rating": 4.6,
+      "address": "Keylong, Lahaul and Spiti District, Himachal Pradesh",
+      "hours": "Open 24/7",
+      "phone": null
+    },
+    {
+      "id": "lahaul-spiti-kaza",
+      "name": "Kaza",
+      "description": "Main town of Spiti Valley, known for its monasteries and scenic beauty.",
+      "image": "/images/locations/kaza.jpg",
+      "category": "Hill Station",
+      "rating": 4.7,
+      "address": "Kaza, Lahaul and Spiti District, Himachal Pradesh",
+      "hours": "Open 24/7",
+      "phone": null
+    },
+    {
+      "id": "lahaul-spiti-kibber",
+      "name": "Kibber",
+      "description": "One of the highest inhabited villages in the world, known for its unique culture.",
+      "image": "/images/locations/kibber.jpg",
+      "category": "Village",
+      "rating": 4.8,
+      "address": "Kibber, Lahaul and Spiti District, Himachal Pradesh",
+      "hours": "Open 24/7",
+      "phone": null
+    },
+    {
+      "id": "lahaul-spiti-tabo",
+      "name": "Tabo Monastery",
+      "description": "Ancient monastery known as the 'Ajanta of the Himalayas' for its murals.",
+      "image": "/images/locations/tabo.jpg",
+      "category": "Monastery",
+      "rating": 4.9,
+      "address": "Tabo, Lahaul and Spiti District, Himachal Pradesh",
+      "hours": "6:00 AM - 6:00 PM",
+      "phone": null
+    },
+    {
+      "id": "lahaul-spiti-chandratal",
+      "name": "Chandratal Lake",
+      "description": "High-altitude lake known for its crescent shape and stunning beauty.",
+      "image": "/images/locations/chandratal.jpg",
+      "category": "Lake",
+      "rating": 4.8,
+      "address": "Chandratal, Lahaul and Spiti District, Himachal Pradesh",
+      "hours": "Best time: June to September",
+      "phone": null
+    }
+  ]
+} 

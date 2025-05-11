@@ -1,0 +1,63 @@
+{
+  "name": "Kinnaur",
+  "description": "Kinnaur is a district in Himachal Pradesh known for its stunning landscapes, apple orchards, and unique culture. The district is famous for its Kinnauri temples, traditional architecture, and the Hindustan-Tibet Road.",
+  "coverImage": "/images/districts/kinnaur-cover.jpg",
+  "summary": "A paradise for nature lovers and cultural enthusiasts",
+  "locations": [
+    {
+      "id": "kinnaur-kalpa",
+      "name": "Kalpa",
+      "description": "Scenic town known for its apple orchards and views of the Kinner Kailash range.",
+      "image": "/images/locations/kalpa.jpg",
+      "category": "Hill Station",
+      "rating": 4.8,
+      "address": "Kalpa, Kinnaur District, Himachal Pradesh",
+      "hours": "Open 24/7",
+      "phone": null
+    },
+    {
+      "id": "kinnaur-sangla",
+      "name": "Sangla Valley",
+      "description": "Beautiful valley known for its apple orchards, traditional architecture, and trekking trails.",
+      "image": "/images/locations/sangla.jpg",
+      "category": "Valley",
+      "rating": 4.7,
+      "address": "Sangla, Kinnaur District, Himachal Pradesh",
+      "hours": "Open 24/7",
+      "phone": null
+    },
+    {
+      "id": "kinnaur-reckong-peo",
+      "name": "Reckong Peo",
+      "description": "District headquarters known for its scenic views and cultural heritage.",
+      "image": "/images/locations/reckong-peo.jpg",
+      "category": "Hill Station",
+      "rating": 4.6,
+      "address": "Reckong Peo, Kinnaur District, Himachal Pradesh",
+      "hours": "Open 24/7",
+      "phone": null
+    },
+    {
+      "id": "kinnaur-nako",
+      "name": "Nako Lake",
+      "description": "High-altitude lake surrounded by ancient monasteries and scenic beauty.",
+      "image": "/images/locations/nako.jpg",
+      "category": "Lake",
+      "rating": 4.5,
+      "address": "Nako, Kinnaur District, Himachal Pradesh",
+      "hours": "Open 24/7",
+      "phone": null
+    },
+    {
+      "id": "kinnaur-chitkul",
+      "name": "Chitkul",
+      "description": "Last inhabited village near the Indo-Tibet border, known for its scenic beauty.",
+      "image": "/images/locations/chitkul.jpg",
+      "category": "Village",
+      "rating": 4.9,
+      "address": "Chitkul, Kinnaur District, Himachal Pradesh",
+      "hours": "Open 24/7",
+      "phone": null
+    }
+  ]
+} 

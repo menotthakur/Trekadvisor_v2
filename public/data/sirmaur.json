@@ -1,0 +1,63 @@
+{
+  "name": "Sirmaur",
+  "description": "Sirmaur is a district in Himachal Pradesh known for its rich cultural heritage, ancient temples, and scenic beauty. The district is famous for its traditional dance forms and the annual Sair Festival.",
+  "coverImage": "/images/districts/sirmaur-cover.jpg",
+  "summary": "A cultural paradise in the lap of the Himalayas",
+  "locations": [
+    {
+      "id": "sirmaur-nahan",
+      "name": "Nahan",
+      "description": "Historic town known for its clean streets, colonial architecture, and scenic views.",
+      "image": "/images/locations/nahan.jpg",
+      "category": "Hill Station",
+      "rating": 4.6,
+      "address": "Nahan, Sirmaur District, Himachal Pradesh",
+      "hours": "Open 24/7",
+      "phone": "+91-1792-230001"
+    },
+    {
+      "id": "sirmaur-renuka",
+      "name": "Renuka Lake",
+      "description": "Largest natural lake in Himachal Pradesh, surrounded by temples and scenic beauty.",
+      "image": "/images/locations/renuka.jpg",
+      "category": "Lake",
+      "rating": 4.7,
+      "address": "Renuka, Sirmaur District, Himachal Pradesh",
+      "hours": "6:00 AM - 6:00 PM",
+      "phone": null
+    },
+    {
+      "id": "sirmaur-paonta",
+      "name": "Paonta Sahib",
+      "description": "Historic town known for its Sikh gurdwara and scenic views of the Yamuna River.",
+      "image": "/images/locations/paonta.jpg",
+      "category": "Heritage",
+      "rating": 4.5,
+      "address": "Paonta Sahib, Sirmaur District, Himachal Pradesh",
+      "hours": "Open 24/7",
+      "phone": null
+    },
+    {
+      "id": "sirmaur-suketi",
+      "name": "Suketi Fossil Park",
+      "description": "Unique park showcasing life-size fiberglass models of prehistoric animals.",
+      "image": "/images/locations/suketi.jpg",
+      "category": "Museum",
+      "rating": 4.4,
+      "address": "Suketi, Sirmaur District, Himachal Pradesh",
+      "hours": "9:00 AM - 5:00 PM",
+      "phone": null
+    },
+    {
+      "id": "sirmaur-churdhar",
+      "name": "Churdhar Peak",
+      "description": "Highest peak in the outer Himalayas, offering stunning views and trekking opportunities.",
+      "image": "/images/locations/churdhar.jpg",
+      "category": "Adventure",
+      "rating": 4.8,
+      "address": "Churdhar, Sirmaur District, Himachal Pradesh",
+      "hours": "Best time: March to June, September to November",
+      "phone": null
+    }
+  ]
+} 

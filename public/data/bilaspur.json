@@ -1,0 +1,63 @@
+{
+  "name": "Bilaspur",
+  "description": "Bilaspur is a district in Himachal Pradesh known for its artificial lake, historic temples, and cultural heritage. The district is famous for its traditional festivals and the Gobind Sagar Lake.",
+  "coverImage": "/images/districts/bilaspur-cover.jpg",
+  "summary": "A perfect blend of natural beauty and cultural heritage",
+  "locations": [
+    {
+      "id": "bilaspur-gobind-sagar",
+      "name": "Gobind Sagar Lake",
+      "description": "Artificial lake created by the Bhakra Dam, offering water sports and scenic views.",
+      "image": "/images/locations/gobind-sagar.jpg",
+      "category": "Lake",
+      "rating": 4.7,
+      "address": "Gobind Sagar Lake, Bilaspur District, Himachal Pradesh",
+      "hours": "6:00 AM - 6:00 PM",
+      "phone": null
+    },
+    {
+      "id": "bilaspur-naina-devi",
+      "name": "Naina Devi Temple",
+      "description": "Ancient temple dedicated to Goddess Naina Devi, offering panoramic views of the surrounding hills.",
+      "image": "/images/locations/naina-devi.jpg",
+      "category": "Temple",
+      "rating": 4.8,
+      "address": "Naina Devi, Bilaspur District, Himachal Pradesh",
+      "hours": "5:00 AM - 9:00 PM",
+      "phone": null
+    },
+    {
+      "id": "bilaspur-bhakra",
+      "name": "Bhakra Dam",
+      "description": "One of the highest gravity dams in the world, offering guided tours and scenic views.",
+      "image": "/images/locations/bhakra.jpg",
+      "category": "Heritage",
+      "rating": 4.6,
+      "address": "Bhakra Dam, Bilaspur District, Himachal Pradesh",
+      "hours": "9:00 AM - 5:00 PM",
+      "phone": null
+    },
+    {
+      "id": "bilaspur-kandrour",
+      "name": "Kandrour Bridge",
+      "description": "Historic bridge offering scenic views of the Sutlej River and surrounding hills.",
+      "image": "/images/locations/kandrour.jpg",
+      "category": "Heritage",
+      "rating": 4.4,
+      "address": "Kandrour, Bilaspur District, Himachal Pradesh",
+      "hours": "Open 24/7",
+      "phone": null
+    },
+    {
+      "id": "bilaspur-sri-naina-devi",
+      "name": "Sri Naina Devi Wildlife Sanctuary",
+      "description": "Protected area known for its diverse flora and fauna, offering trekking opportunities.",
+      "image": "/images/locations/naina-devi-wildlife.jpg",
+      "category": "Wildlife",
+      "rating": 4.5,
+      "address": "Naina Devi, Bilaspur District, Himachal Pradesh",
+      "hours": "6:00 AM - 6:00 PM",
+      "phone": null
+    }
+  ]
+} 

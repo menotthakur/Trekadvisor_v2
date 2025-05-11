@@ -1,0 +1,63 @@
+{
+  "name": "Solan",
+  "description": "Known as the 'Mushroom City of India', Solan is a district in Himachal Pradesh famous for its pleasant climate, educational institutions, and industrial development. The district is home to the famous Shoolini Mata Temple and offers various trekking opportunities.",
+  "coverImage": "/images/districts/solan-cover.jpg",
+  "summary": "A perfect blend of education, industry, and nature",
+  "locations": [
+    {
+      "id": "solan-shoolini",
+      "name": "Shoolini Mata Temple",
+      "description": "Ancient temple dedicated to Goddess Shoolini, offering panoramic views of the surrounding hills.",
+      "image": "/images/locations/shoolini.jpg",
+      "category": "Temple",
+      "rating": 4.6,
+      "address": "Solan, Himachal Pradesh",
+      "hours": "6:00 AM - 8:00 PM",
+      "phone": null
+    },
+    {
+      "id": "solan-kasauli",
+      "name": "Kasauli",
+      "description": "Colonial hill station known for its scenic beauty and peaceful atmosphere.",
+      "image": "/images/locations/kasauli.jpg",
+      "category": "Hill Station",
+      "rating": 4.7,
+      "address": "Kasauli, Solan District, Himachal Pradesh",
+      "hours": "Open 24/7",
+      "phone": "+91-1792-272001"
+    },
+    {
+      "id": "solan-chail",
+      "name": "Chail",
+      "description": "Former summer capital of Patiala, known for its cricket ground and palace.",
+      "image": "/images/locations/chail.jpg",
+      "category": "Heritage",
+      "rating": 4.5,
+      "address": "Chail, Solan District, Himachal Pradesh",
+      "hours": "Open 24/7",
+      "phone": null
+    },
+    {
+      "id": "solan-barog",
+      "name": "Barog",
+      "description": "Scenic town known for its railway station and trekking trails.",
+      "image": "/images/locations/barog.jpg",
+      "category": "Hill Station",
+      "rating": 4.4,
+      "address": "Barog, Solan District, Himachal Pradesh",
+      "hours": "Open 24/7",
+      "phone": null
+    },
+    {
+      "id": "solan-dagshai",
+      "name": "Dagshai",
+      "description": "Historic cantonment town with colonial architecture and scenic views.",
+      "image": "/images/locations/dagshai.jpg",
+      "category": "Heritage",
+      "rating": 4.3,
+      "address": "Dagshai, Solan District, Himachal Pradesh",
+      "hours": "Open 24/7",
+      "phone": null
+    }
+  ]
+} 

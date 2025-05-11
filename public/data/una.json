@@ -1,0 +1,63 @@
+{
+  "name": "Una",
+  "description": "Una is a district in Himachal Pradesh known for its religious sites, industrial development, and scenic beauty. The district is famous for its Chintpurni Temple and the Dera Baba Barbhag Singh.",
+  "coverImage": "/images/districts/una-cover.jpg",
+  "summary": "A perfect blend of spirituality, industry, and nature",
+  "locations": [
+    {
+      "id": "una-chintpurni",
+      "name": "Chintpurni Temple",
+      "description": "Ancient temple dedicated to Goddess Chintpurni, known for its religious significance.",
+      "image": "/images/locations/chintpurni.jpg",
+      "category": "Temple",
+      "rating": 4.7,
+      "address": "Chintpurni, Una District, Himachal Pradesh",
+      "hours": "5:00 AM - 9:00 PM",
+      "phone": null
+    },
+    {
+      "id": "una-barbhag",
+      "name": "Dera Baba Barbhag Singh",
+      "description": "Historic religious site known for its spiritual significance and scenic views.",
+      "image": "/images/locations/barbhag.jpg",
+      "category": "Heritage",
+      "rating": 4.6,
+      "address": "Dera Baba Barbhag Singh, Una District, Himachal Pradesh",
+      "hours": "Open 24/7",
+      "phone": null
+    },
+    {
+      "id": "una-haroli",
+      "name": "Haroli",
+      "description": "Scenic town known for its temples and panoramic views of the surrounding hills.",
+      "image": "/images/locations/haroli.jpg",
+      "category": "Hill Station",
+      "rating": 4.4,
+      "address": "Haroli, Una District, Himachal Pradesh",
+      "hours": "Open 24/7",
+      "phone": null
+    },
+    {
+      "id": "una-basoli",
+      "name": "Basoli",
+      "description": "Historic town known for its traditional art and cultural heritage.",
+      "image": "/images/locations/basoli.jpg",
+      "category": "Heritage",
+      "rating": 4.5,
+      "address": "Basoli, Una District, Himachal Pradesh",
+      "hours": "Open 24/7",
+      "phone": null
+    },
+    {
+      "id": "una-gagret",
+      "name": "Gagret",
+      "description": "Scenic town known for its temples and trekking opportunities.",
+      "image": "/images/locations/gagret.jpg",
+      "category": "Hill Station",
+      "rating": 4.3,
+      "address": "Gagret, Una District, Himachal Pradesh",
+      "hours": "Open 24/7",
+      "phone": null
+    }
+  ]
+} 

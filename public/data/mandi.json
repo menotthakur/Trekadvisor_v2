@@ -1,0 +1,63 @@
+{
+  "name": "Mandi",
+  "description": "Known as the 'Varanasi of Hills', Mandi is a historic town in Himachal Pradesh famous for its ancient temples, cultural heritage, and scenic beauty. The district is home to numerous temples and offers various trekking opportunities.",
+  "coverImage": "/images/districts/mandi-cover.jpg",
+  "summary": "A spiritual and cultural hub in the Himalayas",
+  "locations": [
+    {
+      "id": "mandi-bhutnath",
+      "name": "Bhutnath Temple",
+      "description": "Ancient temple dedicated to Lord Shiva, known for its architectural beauty and religious significance.",
+      "image": "/images/locations/bhutnath.jpg",
+      "category": "Temple",
+      "rating": 4.6,
+      "address": "Mandi, Himachal Pradesh",
+      "hours": "6:00 AM - 8:00 PM",
+      "phone": null
+    },
+    {
+      "id": "mandi-prashar",
+      "name": "Prashar Lake",
+      "description": "High-altitude lake with a floating island and ancient temple, offering stunning views of the Dhauladhar range.",
+      "image": "/images/locations/prashar.jpg",
+      "category": "Lake",
+      "rating": 4.7,
+      "address": "Prashar Lake, Mandi District, Himachal Pradesh",
+      "hours": "Best time: March to June, September to November",
+      "phone": null
+    },
+    {
+      "id": "mandi-rewalsar",
+      "name": "Rewalsar Lake",
+      "description": "Sacred lake surrounded by Buddhist, Hindu, and Sikh shrines, known for its spiritual significance.",
+      "image": "/images/locations/rewalsar.jpg",
+      "category": "Lake",
+      "rating": 4.5,
+      "address": "Rewalsar, Mandi District, Himachal Pradesh",
+      "hours": "Open 24/7",
+      "phone": null
+    },
+    {
+      "id": "mandi-joginder",
+      "name": "Joginder Nagar",
+      "description": "Scenic town known for its hydroelectric project and narrow-gauge railway.",
+      "image": "/images/locations/joginder.jpg",
+      "category": "Hill Station",
+      "rating": 4.4,
+      "address": "Joginder Nagar, Mandi District, Himachal Pradesh",
+      "hours": "Open 24/7",
+      "phone": "+91-1905-242001"
+    },
+    {
+      "id": "mandi-barot",
+      "name": "Barot Valley",
+      "description": "Picturesque valley known for trout fishing, trekking, and camping opportunities.",
+      "image": "/images/locations/barot.jpg",
+      "category": "Adventure",
+      "rating": 4.3,
+      "address": "Barot, Mandi District, Himachal Pradesh",
+      "hours": "Best time: March to June, September to November",
+      "phone": null
+    }
+  ]
+} 
