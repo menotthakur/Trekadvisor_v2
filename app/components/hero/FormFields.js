@@ -53,13 +53,17 @@ export default function FormFields() {
       <Button
         variant="default"
         onClick={handleFindDestinations}
-        className="w-full flex items-center justify-center gap-2"
+        disabled={!selectedDistrict}
+        className={`w-full flex items-center justify-center gap-2 ${
+          !selectedDistrict ? 'opacity-50 cursor-not-allowed' : ''
+        }`}
       >
         <Image
           src="/images/hero/search.svg"
           alt="Search"
           width={20}
           height={20}
+          className="brightness-0 invert"
         />
         Find Destinations
       </Button>

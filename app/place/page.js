@@ -1,11 +1,28 @@
 "use client"
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { Map, Navigation, Info, Coffee, Utensils, Music, Star, MapPin, Phone, Clock, ExternalLink } from 'lucide-react';
 import Button from '../components/ui/Button';
 import { useSearchParams } from 'next/navigation';
+import HeroSection from '../components/places/HeroSection';
+import AboutSection from '../components/places/AboutSection';
+import MapSection from '../components/places/MapSection';
+import LocationsSection from '../components/places/LocationsSection';
+import Footer from '../components/places/Footer';
+
+// Loading component
+function LoadingState() {
+  return (
+    <div className="flex items-center justify-center min-h-screen bg-green-50">
+      <div className="text-center">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-green-600 mx-auto"></div>
+        <p className="mt-4 text-green-700">Loading district information...</p>
+      </div>
+    </div>
+  );
+}
 
 // Main Place component with a green color scheme
-export default function Place() {
+function PlaceContent() {
   const searchParams = useSearchParams();
   const districtId = searchParams.get('district');
   const [districtData, setDistrictData] = useState(null);
@@ -22,7 +39,6 @@ export default function Place() {
         setDistrictData(data);
       } catch (error) {
         console.error('Error loading district data:', error);
-        // Handle error state here
       } finally {
         setLoading(false);
       }
@@ -32,19 +48,9 @@ export default function Place() {
       fetchDistrictData();
     }
   }, [districtId]);
-
-  const [selectedCategory, setSelectedCategory] = useState('all');
-  const [hoveredCard, setHoveredCard] = useState(null);
   
   if (loading) {
-    return (
-      <div className="flex items-center justify-center min-h-screen bg-green-50">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-green-600 mx-auto"></div>
-          <p className="mt-4 text-green-700">Loading district information...</p>
-        </div>
-      </div>
-    );
+    return <LoadingState />;
   }
 
   if (!districtData) {
@@ -74,152 +80,28 @@ export default function Place() {
     summary,
     locations
   } = districtData;
-  
-  // Filter locations based on selected category
-  const filteredLocations = selectedCategory === 'all' 
-    ? locations 
-    : locations.filter(location => location.category === selectedCategory);
-  
-  // Get unique categories from locations and sort them alphabetically
-  const categories = ['all', ...new Set(locations.map(location => location.category))].sort();
-
-  // Function to get appropriate icon based on category
-  const getCategoryIcon = (category) => {
-    switch(category) {
-      case 'cafe': return <Coffee className="w-5 h-5" />;
-      case 'restaurant': return <Utensils className="w-5 h-5" />;
-      case 'bar': return <MapPin className="w-5 h-5" />;
-      case 'landmark': return <MapPin className="w-5 h-5" />;
-      case 'music': return <Music className="w-5 h-5" />;
-      case 'museum': return <Info className="w-5 h-5" />;
-      case 'park': return <MapPin className="w-5 h-5" />;
-      default: return <Star className="w-5 h-5" />;
-    }
-  };
 
   return (
     <div className="flex flex-col min-h-screen bg-green-50">
-      {/* Modernized hero section with parallax effect */}
-      <div className="relative h-96 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-green-800/70 to-green-900/90 z-10"></div>
-        <img 
-          src={coverImage} 
-          alt={name}
-          className="absolute inset-0 w-full h-full object-cover transform scale-110"
-        />
-        <div className="absolute inset-0 flex items-center justify-center z-20">
-          <div className="text-center text-white p-8 max-w-4xl">
-            <h1 className="text-5xl md:text-6xl font-bold mb-4">{name}</h1>
-            <div className="w-24 h-1 bg-green-300 mx-auto mb-6"></div>
-            <p className="text-xl md:text-2xl font-light">{summary}</p>
-          </div>
-        </div>
-      </div>
-
-      {/* Main content with updated design */}
+      <HeroSection name={name} coverImage={coverImage} summary={summary} />
+      
       <div className="container mx-auto px-4 py-12 -mt-16 relative z-30">
-        {/* District description card */}
-        <div className="mb-10 bg-white rounded-xl shadow-xl p-8 border-t-4 border-green-600">
-          <div className="flex items-center mb-6">
-            <div className="p-3 bg-green-100 rounded-full mr-4">
-              <Info className="text-green-600 w-6 h-6" />
-            </div>
-            <h2 className="text-3xl font-bold text-green-900">About {name}</h2>
-          </div>
-          <p className="text-slate-600 text-lg leading-relaxed">{description}</p>
-        </div>
-
-        {/* Interactive map section */}
-        <div className="mb-10 bg-white rounded-xl shadow-xl p-8 border-t-4 border-green-600">
-          <div className="flex items-center mb-6">
-            <div className="p-3 bg-green-100 rounded-full mr-4">
-              <Map className="text-green-600 w-6 h-6" />
-            </div>
-            <h2 className="text-3xl font-bold text-green-900">Explore the Area</h2>
-          </div>
-          <div className="bg-green-50 h-80 rounded-lg overflow-hidden border border-green-100 relative">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <p className="text-green-700 flex items-center bg-white py-3 px-6 rounded-full shadow-md">
-                <Navigation className="mr-2 text-green-600" />
-                Interactive map would be displayed here
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Locations section with modern cards */}
-        <div className="bg-white rounded-xl shadow-xl p-8 border-t-4 border-green-600">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8">
-            <div className="mb-4 md:mb-0">
-              <h2 className="text-3xl font-bold text-green-900">Places to Discover</h2>
-              <p className="text-green-700 mt-2">Find the perfect spots to enjoy in {name}</p>
-            </div>
-            
-            {/* Category filter pills */}
-            <div className="flex flex-wrap gap-2">
-              {categories.map(category => (
-                <Button
-                  key={category}
-                  onClick={() => setSelectedCategory(category)}
-                  variant={selectedCategory === category ? "default" : "secondary"}
-                  className={`rounded-full text-sm font-medium ${
-                    selectedCategory === category
-                      ? 'shadow-md'
-                      : 'hover:bg-green-200'
-                  }`}
-                >
-                  {category !== 'all' && (
-                    <span className="mr-1.5 inline-flex items-center">
-                      {getCategoryIcon(category)}
-                    </span>
-                  )}
-                  <span className="capitalize">{category}</span>
-                </Button>
-              ))}
-            </div>
-          </div>
-
-          {/* Locations grid with hover effects */}
-          {filteredLocations.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filteredLocations.map((location, index) => (
-                <LocationCard 
-                  key={index} 
-                  location={location} 
-                  isHovered={hoveredCard === index}
-                  onHover={() => setHoveredCard(index)}
-                  onLeave={() => setHoveredCard(null)}
-                  getCategoryIcon={getCategoryIcon}
-                />
-              ))}
-            </div>
-          ) : (
-            <div className="text-center py-16">
-              <div className="bg-green-100 rounded-full h-20 w-20 flex items-center justify-center mx-auto mb-4">
-                <MapPin className="text-green-500 w-8 h-8" />
-              </div>
-              {locations.length === 0 ? (
-                <p className="text-green-700 text-lg">No locations available for this district yet.</p>
-              ) : (
-                <p className="text-green-700 text-lg">No locations found for the selected category.</p>
-              )}
-            </div>
-          )}
-        </div>
+        <AboutSection name={name} description={description} />
+        <MapSection />
+        <LocationsSection name={name} locations={locations} />
       </div>
 
-      {/* Footer */}
-      <div className="mt-auto bg-green-800 text-white py-8">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-green-100">Discover more amazing places in {name} and plan your perfect day out.</p>
-          <div className="mt-4 flex justify-center space-x-4">
-            <Button variant="text" className="text-white hover:text-green-300">About</Button>
-            <Button variant="text" className="text-white hover:text-green-300">Contact</Button>
-            <Button variant="text" className="text-white hover:text-green-300">Privacy</Button>
-          </div>
-        </div>
-      </div>
+      <Footer name={name} />
     </div>
+  );
+}
+
+// Export the wrapped component
+export default function Place() {
+  return (
+    <Suspense fallback={<LoadingState />}>
+      <PlaceContent />
+    </Suspense>
   );
 }
 
