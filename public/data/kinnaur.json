@@ -1,63 +1,98 @@
 {
   "name": "Kinnaur",
-  "description": "Kinnaur is a district in Himachal Pradesh known for its stunning landscapes, apple orchards, and unique culture. The district is famous for its Kinnauri temples, traditional architecture, and the Hindustan-Tibet Road.",
+  "description": "Kinnaur is known for its stunning landscapes, apple orchards, and rich cultural heritage. The district offers a perfect blend of adventure, spirituality, and natural beauty, with the majestic Himalayas as its backdrop.",
   "coverImage": "/images/districts/kinnaur-cover.jpg",
-  "summary": "A paradise for nature lovers and cultural enthusiasts",
+  "summary": "Land of Gods and Apples",
   "locations": [
     {
       "id": "kinnaur-kalpa",
       "name": "Kalpa",
-      "description": "Scenic town known for its apple orchards and views of the Kinner Kailash range.",
-      "image": "/images/locations/kalpa.jpg",
-      "category": "Hill Station",
-      "rating": 4.8,
-      "address": "Kalpa, Kinnaur District, Himachal Pradesh",
-      "hours": "Open 24/7",
-      "phone": null
+      "description": "Kalpa is a scenic town known for its apple orchards and stunning views of the Kinner Kailash range. It's a perfect destination for nature lovers and photography enthusiasts.",
+      "image": "/images/locations/kinnaur-kalpa.jpg",
+      "category": "Town",
+      "rating": 4.7,
+      "address": "Kalpa, Kinnaur District",
+      "hours": "Best time to visit: April to June, September to November",
+      "phone": null,
+      "travelTips": {
+        "bestTime": "April to June and September to November for pleasant weather",
+        "currency": "Indian Rupee (INR) - carry cash for local expenses",
+        "language": "Hindi, Kinnauri, and English understood",
+        "transportation": "Regular buses and taxis from Shimla, requires permit",
+        "accommodation": "Limited options available, book in advance"
+      }
     },
     {
       "id": "kinnaur-sangla",
       "name": "Sangla Valley",
-      "description": "Beautiful valley known for its apple orchards, traditional architecture, and trekking trails.",
-      "image": "/images/locations/sangla.jpg",
+      "description": "Sangla Valley is known for its breathtaking beauty, apple orchards, and the Baspa River. It's a perfect destination for nature lovers and adventure enthusiasts.",
+      "image": "/images/locations/kinnaur-sangla.jpg",
       "category": "Valley",
-      "rating": 4.7,
-      "address": "Sangla, Kinnaur District, Himachal Pradesh",
-      "hours": "Open 24/7",
-      "phone": null
+      "rating": 4.8,
+      "address": "Sangla, Kinnaur District",
+      "hours": "Best time to visit: April to June, September to November",
+      "phone": null,
+      "travelTips": {
+        "bestTime": "April to June and September to November for pleasant weather",
+        "currency": "Indian Rupee (INR) - carry cash for local expenses",
+        "language": "Hindi, Kinnauri, and English understood",
+        "transportation": "Regular buses and taxis from Shimla, requires permit",
+        "accommodation": "Limited options available, book in advance"
+      }
     },
     {
       "id": "kinnaur-reckong-peo",
       "name": "Reckong Peo",
-      "description": "District headquarters known for its scenic views and cultural heritage.",
-      "image": "/images/locations/reckong-peo.jpg",
-      "category": "Hill Station",
-      "rating": 4.6,
-      "address": "Reckong Peo, Kinnaur District, Himachal Pradesh",
-      "hours": "Open 24/7",
-      "phone": null
-    },
-    {
-      "id": "kinnaur-nako",
-      "name": "Nako Lake",
-      "description": "High-altitude lake surrounded by ancient monasteries and scenic beauty.",
-      "image": "/images/locations/nako.jpg",
-      "category": "Lake",
+      "description": "Reckong Peo is the district headquarters known for its administrative importance and stunning views of the Kinner Kailash range. It's a perfect base for exploring Kinnaur.",
+      "image": "/images/locations/kinnaur-reckong.jpg",
+      "category": "Town",
       "rating": 4.5,
-      "address": "Nako, Kinnaur District, Himachal Pradesh",
-      "hours": "Open 24/7",
-      "phone": null
+      "address": "Reckong Peo, Kinnaur District",
+      "hours": "Best time to visit: April to June, September to November",
+      "phone": null,
+      "travelTips": {
+        "bestTime": "April to June and September to November for pleasant weather",
+        "currency": "Indian Rupee (INR) - ATMs available",
+        "language": "Hindi, Kinnauri, and English understood",
+        "transportation": "Regular buses and taxis from Shimla, requires permit",
+        "accommodation": "Multiple options available, book in advance"
+      }
     },
     {
       "id": "kinnaur-chitkul",
       "name": "Chitkul",
-      "description": "Last inhabited village near the Indo-Tibet border, known for its scenic beauty.",
-      "image": "/images/locations/chitkul.jpg",
+      "description": "Chitkul is the last inhabited village near the Indo-Tibet border, known for its stunning beauty and traditional Kinnauri architecture. It's a perfect destination for nature lovers and cultural enthusiasts.",
+      "image": "/images/locations/kinnaur-chitkul.jpg",
       "category": "Village",
-      "rating": 4.9,
-      "address": "Chitkul, Kinnaur District, Himachal Pradesh",
-      "hours": "Open 24/7",
-      "phone": null
+      "rating": 4.6,
+      "address": "Chitkul, Kinnaur District",
+      "hours": "Best time to visit: April to June, September to November",
+      "phone": null,
+      "travelTips": {
+        "bestTime": "April to June and September to November for pleasant weather",
+        "currency": "Indian Rupee (INR) - carry cash for local expenses",
+        "language": "Hindi, Kinnauri, and English understood",
+        "transportation": "Regular buses and taxis from Sangla, requires permit",
+        "accommodation": "Limited options available, book in advance"
+      }
+    },
+    {
+      "id": "kinnaur-nako",
+      "name": "Nako Lake",
+      "description": "Nako Lake is a high-altitude lake surrounded by snow-capped mountains and ancient monasteries. It's a perfect destination for nature lovers and spiritual seekers.",
+      "image": "/images/locations/kinnaur-nako.jpg",
+      "category": "Lake",
+      "rating": 4.7,
+      "address": "Nako, Kinnaur District",
+      "hours": "Best time to visit: April to June, September to November",
+      "phone": null,
+      "travelTips": {
+        "bestTime": "April to June and September to November for pleasant weather",
+        "currency": "Indian Rupee (INR) - carry cash for local expenses",
+        "language": "Hindi, Kinnauri, and English understood",
+        "transportation": "Regular buses and taxis from Reckong Peo, requires permit",
+        "accommodation": "Limited options available, book in advance"
+      }
     }
   ]
 } 

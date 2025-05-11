@@ -7,7 +7,7 @@ import HeroSection from '../components/places/HeroSection';
 import AboutSection from '../components/places/AboutSection';
 import MapSection from '../components/places/MapSection';
 import LocationsSection from '../components/places/LocationsSection';
-import Footer from '../components/places/Footer';
+import Footer from '../components/ui/Footer';
 
 // Loading component
 function LoadingState() {
@@ -87,7 +87,7 @@ function PlaceContent() {
       
       <div className="container mx-auto px-4 py-12 -mt-16 relative z-30">
         <AboutSection name={name} description={description} />
-        <MapSection />
+        {/* <MapSection /> */}
         <LocationsSection name={name} locations={locations} />
       </div>
 

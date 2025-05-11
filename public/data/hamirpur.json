@@ -1,63 +1,98 @@
 {
   "name": "Hamirpur",
-  "description": "Hamirpur is a district in Himachal Pradesh known for its educational institutions, temples, and scenic beauty. The district is famous for its traditional festivals and the Sujanpur Tira Fort.",
+  "description": "Hamirpur is known for its engineering colleges, ancient temples, and scenic beauty. The district offers a perfect blend of education, spirituality, and natural landscapes.",
   "coverImage": "/images/districts/hamirpur-cover.jpg",
-  "summary": "A perfect blend of education, culture, and nature",
+  "summary": "Land of Education and Temples",
   "locations": [
     {
       "id": "hamirpur-sujanpur",
-      "name": "Sujanpur Tira Fort",
-      "description": "Historic fort known for its murals and architectural beauty.",
-      "image": "/images/locations/sujanpur.jpg",
-      "category": "Heritage",
-      "rating": 4.6,
-      "address": "Sujanpur, Hamirpur District, Himachal Pradesh",
+      "name": "Sujanpur Fort",
+      "description": "Sujanpur Fort is a historic fort known for its beautiful murals and architectural significance. It offers panoramic views of the surrounding valleys.",
+      "image": "/images/locations/hamirpur-sujanpur.jpg",
+      "category": "Fort",
+      "rating": 4.4,
+      "address": "Sujanpur, Hamirpur District",
       "hours": "9:00 AM - 5:00 PM",
-      "phone": null
+      "phone": null,
+      "travelTips": {
+        "bestTime": "October to March for pleasant weather",
+        "currency": "Indian Rupee (INR) - entry fee applicable",
+        "language": "Hindi and English understood",
+        "transportation": "Regular buses and taxis from Hamirpur",
+        "accommodation": "Stay in Hamirpur town"
+      }
     },
     {
       "id": "hamirpur-deotsidh",
       "name": "Deotsidh Temple",
-      "description": "Ancient temple dedicated to Baba Balak Nath, known for its religious significance.",
-      "image": "/images/locations/deotsidh.jpg",
+      "description": "Deotsidh Temple is a famous temple dedicated to Baba Balak Nath. It's known for its religious significance and scenic location.",
+      "image": "/images/locations/hamirpur-deotsidh.jpg",
       "category": "Temple",
-      "rating": 4.7,
-      "address": "Deotsidh, Hamirpur District, Himachal Pradesh",
-      "hours": "5:00 AM - 9:00 PM",
-      "phone": null
+      "rating": 4.6,
+      "address": "Deotsidh, Hamirpur District",
+      "hours": "6:00 AM - 8:00 PM",
+      "phone": null,
+      "travelTips": {
+        "bestTime": "Year-round, especially during religious festivals",
+        "currency": "Indian Rupee (INR) - free entry",
+        "language": "Hindi and local dialects spoken",
+        "transportation": "Regular buses and taxis from Hamirpur",
+        "accommodation": "Limited options available near the temple"
+      }
     },
     {
       "id": "hamirpur-nadaun",
       "name": "Nadaun",
-      "description": "Historic town known for its temples and scenic views of the Beas River.",
-      "image": "/images/locations/nadaun.jpg",
-      "category": "Heritage",
-      "rating": 4.4,
-      "address": "Nadaun, Hamirpur District, Himachal Pradesh",
-      "hours": "Open 24/7",
-      "phone": null
-    },
-    {
-      "id": "hamirpur-awadevi",
-      "name": "Awadevi Temple",
-      "description": "Ancient temple dedicated to Goddess Awadevi, known for its architectural beauty.",
-      "image": "/images/locations/awadevi.jpg",
-      "category": "Temple",
-      "rating": 4.5,
-      "address": "Awadevi, Hamirpur District, Himachal Pradesh",
-      "hours": "6:00 AM - 8:00 PM",
-      "phone": null
-    },
-    {
-      "id": "hamirpur-galore",
-      "name": "Galore Wildlife Sanctuary",
-      "description": "Protected area known for its diverse flora and fauna, offering trekking opportunities.",
-      "image": "/images/locations/galore.jpg",
-      "category": "Wildlife",
+      "description": "Nadaun is a historic town known for its ancient temples and scenic beauty. It's a perfect destination for history enthusiasts and nature lovers.",
+      "image": "/images/locations/hamirpur-nadaun.jpg",
+      "category": "Town",
       "rating": 4.3,
-      "address": "Galore, Hamirpur District, Himachal Pradesh",
-      "hours": "6:00 AM - 6:00 PM",
-      "phone": null
+      "address": "Nadaun, Hamirpur District",
+      "hours": "Best time to visit: October to March",
+      "phone": null,
+      "travelTips": {
+        "bestTime": "October to March for pleasant weather",
+        "currency": "Indian Rupee (INR) - carry cash for local expenses",
+        "language": "Hindi and local dialects spoken",
+        "transportation": "Regular buses and taxis from Hamirpur",
+        "accommodation": "Limited options available in town"
+      }
+    },
+    {
+      "id": "hamirpur-bhoranj",
+      "name": "Bhoranj",
+      "description": "Bhoranj is a scenic town known for its beautiful views and peaceful atmosphere. It's a perfect destination for nature lovers and photography enthusiasts.",
+      "image": "/images/locations/hamirpur-bhoranj.jpg",
+      "category": "Town",
+      "rating": 4.2,
+      "address": "Bhoranj, Hamirpur District",
+      "hours": "Best time to visit: March to June",
+      "phone": null,
+      "travelTips": {
+        "bestTime": "March to June for pleasant weather",
+        "currency": "Indian Rupee (INR) - carry cash for local expenses",
+        "language": "Hindi and English understood",
+        "transportation": "Regular buses and taxis from Hamirpur",
+        "accommodation": "Limited options available in town"
+      }
+    },
+    {
+      "id": "hamirpur-barsar",
+      "name": "Barsar",
+      "description": "Barsar is a historic town known for its ancient temples and cultural heritage. It's a perfect destination for spiritual seekers and history enthusiasts.",
+      "image": "/images/locations/hamirpur-barsar.jpg",
+      "category": "Town",
+      "rating": 4.3,
+      "address": "Barsar, Hamirpur District",
+      "hours": "Best time to visit: October to March",
+      "phone": null,
+      "travelTips": {
+        "bestTime": "October to March for pleasant weather",
+        "currency": "Indian Rupee (INR) - carry cash for local expenses",
+        "language": "Hindi and local dialects spoken",
+        "transportation": "Regular buses and taxis from Hamirpur",
+        "accommodation": "Limited options available in town"
+      }
     }
   ]
 } 
