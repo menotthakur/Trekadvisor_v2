@@ -82,7 +82,7 @@ export default function Introduction() {
             fill
             className="object-cover"
             onError={(e) => {
-              e.currentTarget.src = `/api/placeholder?width=600&height=500`;
+              e.currentTarget.src = `/images/placeholder.svg`;
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-60"></div>

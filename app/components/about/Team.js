@@ -100,8 +100,8 @@ export default function Team() {
                   className="object-cover object-center"
                   sizes="(max-width: 768px) 100vw, 50vw"
                   onError={(e) => {
-                    // Use placeholder API
-                    e.currentTarget.src = `/api/placeholder?width=400&height=300`;
+                    // Use static placeholder
+                    e.currentTarget.src = `/images/placeholder.svg`;
                   }}
                 />
                 <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black/70 to-transparent"></div>

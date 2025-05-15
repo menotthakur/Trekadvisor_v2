@@ -2,11 +2,15 @@
   "name": "travel-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://menotthakur.github.io/Trekadvisor_v2",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out",
+    "export": "next export"
   },
   "dependencies": {
     "framer-motion": "^12.10.5",
@@ -17,6 +21,7 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "gh-pages": "^6.3.0",
     "tailwindcss": "^4"
   }
 }

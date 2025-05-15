@@ -52,7 +52,7 @@ export default function Hero() {
                 fill
                 className="object-cover"
                 onError={(e) => {
-                  e.currentTarget.src = `/api/placeholder?width=200&height=200`;
+                  e.currentTarget.src = `/images/placeholder.svg`;
                 }}
               />
             </motion.div>
@@ -68,7 +68,7 @@ export default function Hero() {
                 fill
                 className="object-cover"
                 onError={(e) => {
-                  e.currentTarget.src = `/api/placeholder?width=200&height=200`;
+                  e.currentTarget.src = `/images/placeholder.svg`;
                 }}
               />
             </motion.div>
